@@ -31,5 +31,26 @@ public class BaseEntity {
     @Column(insertable = false)
     private String updatedBy;
 
+    public BaseEntity() {
+    }
 
+    public Long getId() {
+        return id;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public String getCreatedBy() {
+        return createdBy;
+    }
+
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public String getUpdatedBy() {
+        return updatedBy;
+    }
 }
